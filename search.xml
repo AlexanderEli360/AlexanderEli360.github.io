@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>我的Hexo搭建之路 ---初始化生成篇</title>
+      <link href="/2020/05/13/%E6%88%91%E7%9A%84Hexo%E6%90%AD%E5%BB%BA%E4%B9%8B%E8%B7%AF/"/>
+      <url>/2020/05/13/%E6%88%91%E7%9A%84Hexo%E6%90%AD%E5%BB%BA%E4%B9%8B%E8%B7%AF/</url>
+      
+        <content type="html"><![CDATA[<h4 id="知识储备：git，github"><a href="#知识储备：git，github" class="headerlink" title="知识储备：git，github"></a>知识储备：git，github</h4><h4 id="前期准备：电脑安装好git"><a href="#前期准备：电脑安装好git" class="headerlink" title="前期准备：电脑安装好git"></a>前期准备：电脑安装好git</h4><h4 id="搭建过程："><a href="#搭建过程：" class="headerlink" title="搭建过程："></a>搭建过程：</h4><p>1.下载Node.js，网址：<a href="https://nodejs.org/，" target="_blank" rel="noopener">https://nodejs.org/，</a> 选择长期支持版的，这里以12.16.3 LTS 为例；下载完以后不停-next安装即可；</p><p>  打开git ，使用 node-v 命令检查是否安装成功，如果成功，则出现正常的版本信息，反之就要重装啦；</p><hr><p>2.本应该借助npm镜像安装hexo，但是由于国内的安装速度比较慢，就先安装cnpm，之后都使用这个进行一系列安装；</p><p>语法：</p><pre><code>npm instll -g cnpm --registry=https://registry.npm.taobao.org</code></pre><p>接着使用cnpm安装hexo：</p><pre><code>cnpm install -g hexo-cli</code></pre><p>等待安装结束，使用  hexo-v  ,检查有没有安装成功</p><hr><p>3.建立一个空的文件夹blog,语法：mkdir blog </p><p>之后所有的博客文件都在这里，可以在这里查找；</p><p>使用pwd命令查看是不是在blog文件下（以后干所有的事情都在blog文件下）</p><hr><p>4.在blog 路径下使用  </p><pre><code>hexo init</code></pre><p>  命令来初始化一个博客；</p><p>安装成功的提示：</p><pre><code>...........  INFO Start blogging with Hexo!</code></pre><p>这时候会发现原来的文件下出现了一些文件，也就是框架内容；</p><hr><p>5.使用 hexo  s 启动博客（也可以使用语法     hexo start ）；</p><p>运行以后就会在  本地的4000端口启动，显示的内容是：INFO  Hexo is running at <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a>.  Press Ctrl +C to stop.在任何一个人浏览器上输入上述网址，即可查看到一个生成的Hexo 博客，系统已经自己创建一篇文章；</p><hr><p>6.回到git ，使用  hexo n “我的第一篇博客文章” 来创建一篇自己的文章；<br>使用</p><pre><code>cd source/_posts</code></pre><p>转到对应文件下，再使用      ls      ,  就会看到刚才所建立的 我的第一篇博客文章.md,使用</p><pre><code>vim  我的第一篇博客文章.md </code></pre><p>进行修改；在这里推荐使用Visual Studio Code进行编辑，语法为Markdown 语法（具体的用法后期总结），也可以使用别的；</p><hr><p>7.使用hexo g 进行生成；使用hexo s 启动，在本地的4000端口进行查看；这时候会出现一篇名为：我的第一篇博客的文章</p><hr><p><strong>Tips</strong>:</p><p>（1） 出现  <strong>INFO</strong> 表示某个动作成功；</p><p>（2）<strong>pwd</strong>用来查看路径；</p><p>（3）使用    ls-l    显示文件夹里所有内容；</p><p>（4） 在这个过程中Ctrl +C 不在是赋值的意思，而是停止；</p><p>（5）在整个过程中如果出现任何错误或者不满意的地方，将blog文件夹删掉，重来就行，比如我自己就重新建了好几次；</p><p>…….</p><p>到这里，初始化创建生成篇的内容就完啦，有关于博客主题的更换、如何远端查看将在下篇总结！</p><p><strong>PS.</strong>：部分内容学于B站  CodeSheep up主，在这里表示感谢，所用的所有内容仅用于个人学习提升，不做其他用途。 </p><hr><p>今日份Fighting:</p><p><strong>莫忘少年凌云志，曾许天下第一流</strong></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Hexo、matery、首次搭建 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>pagefriends</title>
       <link href="/2020/05/09/pagefriends/"/>
       <url>/2020/05/09/pagefriends/</url>
